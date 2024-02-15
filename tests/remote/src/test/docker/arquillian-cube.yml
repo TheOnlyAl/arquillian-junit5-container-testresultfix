@@ -1,0 +1,11 @@
+payara*:
+   image: payara/server-full:5.2022.5
+   portBindings:
+   - 4848/tcp
+   - 8080/tcp
+   await:
+      strategy: log
+      match: 'Network Listener admin-listener started'
+      stdOut: true
+      stdErr: true
+      timeout: 120
