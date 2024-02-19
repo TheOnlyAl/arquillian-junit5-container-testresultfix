@@ -33,3 +33,7 @@ public class MyClassIT {
 
 For running the remote tests a docker environment is needed, therefore they do not run by default. 
 If you want to use the remote tests you need to activate the profile ``include-remote-tests``.
+
+## Build
+
+Tested with Maven 3.9.6 and Temurin JDK 8.0.402+6 on x64
