@@ -1,7 +1,7 @@
 package de.adtelligence.arquillian.junit5.container.testresultfix.tests.remote;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit5.ArquillianExtension;
@@ -33,12 +33,12 @@ public class TestResultIT {
 	@Test
 	@Order(1)
 	void testResult1() {
-		assertEquals(null, lastResult);
+		assertNull(lastResult);
 	}
 
 	@Test
 	@Order(2)
 	void testResult2() {
-		assertNotEquals(null, lastResult);
+		assertNotNull(lastResult);
 	}
 }
